@@ -13,3 +13,9 @@
     @apply cursor-pointer;
   }
 }
+
+@layer utilities {
+  /* .classname {
+    @apply // buraya css ler gelecek
+  } */
+}

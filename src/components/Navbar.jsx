@@ -7,7 +7,7 @@ const Navbar = () => {
   const handleClick = () => setClicked(!clicked);
   // bg-[#1f2020]
   return (
-    <div className="fixed w-full h-[80px] bg-red-800  text-gray-300 flex items-center justify-between px-5">
+    <div className="fixed w-full h-[80px] bg-red-800  text-gray-300 flex items-center justify-between px-5 z-20">
       Logo
       <ul className="hidden md:flex">
         <li>Home</li>
@@ -18,7 +18,7 @@ const Navbar = () => {
       </ul>
       {/* Hamburger Menu */}
       <div className="cursor-pointer md:hidden z-20" onClick={handleClick}>
-        {clicked ? <FaTimes /> : <FaBars />}
+        {clicked ? <FaTimes size={30} /> : <FaBars size={20} />}
       </div>
       {/* Mobile Menu */}
       <ul
