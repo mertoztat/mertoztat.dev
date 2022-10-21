@@ -25,32 +25,61 @@ export const skillsImages = [
 export const projects = [
   {
     id: 1,
-    img: "",
+    img: "images/projects/sneakers.png",
     name: "Sneakers E-Commerce",
     description:
       "In this project was case to FrontendMentor.io. I made responsive, functionality, e commerce product detail page. This app have add, update & delete cart. ",
     tech: "React JS, Context API, React Hooks",
-    demo: "",
-    github: "",
+    demo: "https://fementor-sneakers.netlify.app/",
+    github: "https://github.com/mertoztat/Ecommerce_sneakers",
   },
   {
     id: 2,
-    img: "",
+    img: "images/projects/pokemon.png",
     name: "Pokemon Memory Card",
     description:
       "A memory game has been made where we try to find matching cards with using ",
     tech: "React JS, React Hooks",
-    demo: "",
-    github: "",
+    demo: "https://memory-game-with-pokemon.netlify.app/",
+    github: "https://github.com/mertoztat/memory-game",
   },
   {
     id: 3,
-    img: "",
+    img: "images/projects/unsplash.png",
     name: "Unsplash Search Photo Gallery",
     description:
-      "In this project i made it like unsplash clone. I use unsplash api, tailwindcss & reactjs",
-    tech: "React JS, React Hooks, Tailwind CSS, Unsplash Api",
-    demo: "",
-    github: "",
+      "In this project, I made an application that you can search for photos using the unsplash api. I completed the project with tailwind css and axios.",
+    tech: "React JS, React Hooks, Tailwind CSS, Unsplash Api, Axios",
+    demo: "https://unsplash-photos-gallery.netlify.app/",
+    github: "https://github.com/mertoztat/Unsplash-Search-Photos",
+  },
+  {
+    id: 4,
+    img: "images/projects/burger.png",
+    name: "Mars Hamburger Landing Page",
+    description: "This project created by html, css & javascript",
+    tech: "Html, Css, Javascript",
+    demo: "https://marsburger.netlify.app/",
+    github: "https://github.com/mertoztat/Mars-Burger-Shop",
+  },
+  {
+    id: 5,
+    img: "images/projects/todo.png",
+    name: "Todo App",
+    description:
+      "In this project, i was created todo app. Todo project have add, delete & filtering operations are performed.",
+    tech: "React js, React Hooks",
+    demo: "https://react-to-do-app-project.netlify.app/",
+    github: "https://github.com/mertoztat/To-do-app-with-react",
+  },
+  {
+    id: 6,
+    img: "images/projects/qr.png",
+    name: "Qr Code Generator",
+    description:
+      "In this project, I made an application that we can create and download qr code using the qrcode library with using react.",
+    tech: "React js",
+    demo: "https://qr-code-generator-react.netlify.app/",
+    github: "https://github.com/mertoztat/react-qr-code-generator",
   },
 ];

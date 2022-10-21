@@ -7,7 +7,7 @@ const Navbar = () => {
   const handleClick = () => setClicked(!clicked);
   // bg-[#1f2020]
   return (
-    <div className="fixed w-full h-[80px] bg-red-800  text-gray-300 flex items-center justify-between px-5 z-20">
+    <div className="fixed w-full h-[80px]   text-gray-300 flex items-center justify-around px-5 z-20">
       Logo
       <ul className="hidden md:flex">
         <li>Home</li>

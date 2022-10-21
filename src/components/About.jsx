@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="w-full h-screen bg-[#1f2020]">
       {/* container */}
-      <div className="max-w-[1000px] mx-auto h-screen ">
+      <div className="max-w-[1000px] mx-auto h-full ">
         <div className="flex  align-center justify-center cursor-pointer ">
           <div
             data-aos="fade-right"
