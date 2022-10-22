@@ -5,6 +5,8 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Phone from "./components/Phone";
+import Web from "./components/Web";
 
 const App = () => {
   return (
@@ -13,7 +15,8 @@ const App = () => {
       <Personal />
       <About />
       <Skills />
-      <Projects />
+      {/* <Projects /> */}
+      <Phone />
       <Contact />
     </>
   );

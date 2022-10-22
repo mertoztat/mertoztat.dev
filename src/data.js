@@ -25,17 +25,17 @@ export const skillsImages = [
 export const projects = [
   {
     id: 1,
-    img: "images/projects/sneakers.png",
-    name: "Sneakers E-Commerce",
-    description:
-      "In this project was case to FrontendMentor.io. I made responsive, functionality, e commerce product detail page. This app have add, update & delete cart. ",
-    tech: "React JS, Context API, React Hooks",
-    demo: "https://fementor-sneakers.netlify.app/",
-    github: "https://github.com/mertoztat/Ecommerce_sneakers",
+    web: "images/projects/burger.png",
+    mobil: "images/projects/mobile.png",
+    description: "This project created by html, css & javascript",
+    tech: "Html, Css, Javascript",
+    demo: "https://marsburger.netlify.app/",
+    github: "https://github.com/mertoztat/Mars-Burger-Shop",
   },
   {
     id: 2,
-    img: "images/projects/pokemon.png",
+    web: "images/projects/burger.png",
+    mobil: "images/projects/mobile.png",
     name: "Pokemon Memory Card",
     description:
       "A memory game has been made where we try to find matching cards with using ",
@@ -45,7 +45,8 @@ export const projects = [
   },
   {
     id: 3,
-    img: "images/projects/unsplash.png",
+    web: "images/projects/burger.png",
+    mobil: "images/projects/mobile.png",
     name: "Unsplash Search Photo Gallery",
     description:
       "In this project, I made an application that you can search for photos using the unsplash api. I completed the project with tailwind css and axios.",
@@ -53,18 +54,11 @@ export const projects = [
     demo: "https://unsplash-photos-gallery.netlify.app/",
     github: "https://github.com/mertoztat/Unsplash-Search-Photos",
   },
-  {
-    id: 4,
-    img: "images/projects/burger.png",
-    name: "Mars Hamburger Landing Page",
-    description: "This project created by html, css & javascript",
-    tech: "Html, Css, Javascript",
-    demo: "https://marsburger.netlify.app/",
-    github: "https://github.com/mertoztat/Mars-Burger-Shop",
-  },
+
   {
     id: 5,
-    img: "images/projects/todo.png",
+    web: "images/projects/burger.png",
+    mobil: "images/projects/mobile.png",
     name: "Todo App",
     description:
       "In this project, i was created todo app. Todo project have add, delete & filtering operations are performed.",
@@ -74,7 +68,8 @@ export const projects = [
   },
   {
     id: 6,
-    img: "images/projects/qr.png",
+    web: "images/projects/burger.png",
+    mobil: "images/projects/mobile.png",
     name: "Qr Code Generator",
     description:
       "In this project, I made an application that we can create and download qr code using the qrcode library with using react.",
