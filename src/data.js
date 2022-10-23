@@ -34,8 +34,8 @@ export const projects = [
   },
   {
     id: 2,
-    web: "images/projects/burger.png",
-    mobil: "images/projects/mobile.png",
+    web: "images/projects/sneakers.png",
+    mobil: "images/projects/sneakersmobil.png",
     name: "Pokemon Memory Card",
     description:
       "A memory game has been made where we try to find matching cards with using ",
@@ -45,8 +45,8 @@ export const projects = [
   },
   {
     id: 3,
-    web: "images/projects/burger.png",
-    mobil: "images/projects/mobile.png",
+    web: "images/projects/unsplash.png",
+    mobil: "images/projects/qwe.png",
     name: "Unsplash Search Photo Gallery",
     description:
       "In this project, I made an application that you can search for photos using the unsplash api. I completed the project with tailwind css and axios.",
@@ -57,8 +57,8 @@ export const projects = [
 
   {
     id: 5,
-    web: "images/projects/burger.png",
-    mobil: "images/projects/mobile.png",
+    web: "images/projects/todo.png",
+    mobil: "images/projects/todo.png",
     name: "Todo App",
     description:
       "In this project, i was created todo app. Todo project have add, delete & filtering operations are performed.",
@@ -68,8 +68,8 @@ export const projects = [
   },
   {
     id: 6,
-    web: "images/projects/burger.png",
-    mobil: "images/projects/mobile.png",
+    web: "images/projects/qr.png",
+    mobil: "images/projects/qr.png",
     name: "Qr Code Generator",
     description:
       "In this project, I made an application that we can create and download qr code using the qrcode library with using react.",

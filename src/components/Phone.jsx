@@ -21,10 +21,17 @@ const Phone = () => {
             </div>
             {/* phone mock up */}
             <div className="max-w-[300px] max-h-[600px] relative mt-10">
-              <img className="" src={phone} alt="" />
+              <img className="w-screen h-screen" src={phone} alt="" />
               {/* phone screen */}
               <div className="max-w-[264px] max-h-[567px] h-full w-full absolute top-[17px] left-[18px] rounded-[28px] overflow-auto phone">
-                <img src={item.mobil} alt="" className="" />
+                <img src={item.mobil} alt="" className="w-full h-full" />
+              </div>
+            </div>
+            <div className="w-[600px] max-h-[379px] block relative">
+              <img className="" src={laptop} alt="" />
+              {/* phone screen */}
+              <div className="w-[451px] h-[283px]  absolute top-[18px] left-[68px] overflow-scroll phone">
+                <img src={item.web} alt="" className="" />
               </div>
             </div>
           </div>
