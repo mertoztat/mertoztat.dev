@@ -5,7 +5,7 @@ AOS.init();
 
 const About = () => {
   return (
-    <div className="w-full h-screen bg-[#1f2020]">
+    <div className="w-full h-screen">
       {/* container */}
       <div className="max-w-[1000px] mx-auto h-full ">
         <div className="flex  align-center justify-center cursor-pointer ">

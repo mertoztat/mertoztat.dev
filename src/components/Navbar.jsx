@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../assets/logo.png";
+import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
@@ -7,14 +10,32 @@ const Navbar = () => {
   const handleClick = () => setClicked(!clicked);
   // bg-[#1f2020]
   return (
-    <div className="fixed w-full h-[80px]   text-gray-300 flex items-center justify-around px-5 z-20">
-      Logo
+    <div className="fixed w-full h-[80px] text-gray-300 flex items-center justify-around px-5 z-20 shadow-xl bg-zinc-800/95">
+      <div className="w-20 pt-4">
+        <Link to="/">
+          <img
+            className="w-20 flex items-center justify-center cursor-pointer"
+            src={logo}
+            alt="mertöztat"
+          />
+        </Link>
+      </div>
       <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contacts</li>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <Link to="/about">
+          <li>About</li>
+        </Link>
+        <Link to="/skills">
+          <li>Skills</li>
+        </Link>
+        <Link to="projects">
+          <li>Projects</li>
+        </Link>
+        <Link to="/contacts">
+          <li>Contacts</li>
+        </Link>
       </ul>
       {/* Hamburger Menu */}
       <div className="cursor-pointer md:hidden z-20" onClick={handleClick}>
@@ -44,6 +65,7 @@ const Navbar = () => {
           Contacts
         </li>
       </ul>
+      <Outlet />
     </div>
   );
 };

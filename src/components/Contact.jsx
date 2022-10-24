@@ -1,12 +1,35 @@
-import React from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import contact from "../assets/contact.png";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_xmz6w7b",
+        "template_kgk9d8v",
+        form.current,
+        "FQpHPLOuimxLl6hlC"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    window.location.reload();
+  };
+
   return (
-    <div className="w-full h-screen bg-[#1f2020] flex justify-center  items-center p-4 ">
+    <div className="w-full h-screen  flex justify-center  items-center p-4">
       {/* contact container */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 bg-[#050120] shadow-xl rounded-xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 bg-[#0e2b29]/70 shadow-2xl rounded-xl">
         <div className="relative">
           <img
             className="rounded-l-xl w-full h-full object-cover"
@@ -28,38 +51,39 @@ const Contact = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col sm:max-w-full bg-red-300">
-          <form className="flex flex-col p-4 ">
-            <span className="text-xl m-4 sm:text-3xl  text-center text-white">
-              Contact me!
-            </span>
-            <label className="sm:text-xl text-white py-1" htmlFor="name">
-              Name
-            </label>
+
+        <div className="flex flex-col sm:max-w-full">
+          <form ref={form} onSubmit={sendEmail} className="flex flex-col">
+            <div className="text-xl m-4 sm:text-3xl  text-center text-slate-300">
+              <span className="border-b-2">Contact me!</span>
+            </div>
+            <label className="sm:text-xl text-gray-300 p-2">Name</label>
             <input
-              className="p-2 text-slate-600   outline-none bg-transparent"
+              className="p-2 my-1 text-slate-300   outline-none bg-transparent border-b"
               type="text"
               placeholder="Enter your name"
+              name="user_name"
             />
-            <label className=" sm:text-xl text-white py-1" htmlFor="email">
-              E-mail
-            </label>
+            <label className=" sm:text-xl text-gray-300 p-2">E-mail</label>
             <input
-              className="p-2 text-slate-600  outline-none bg-transparent"
+              className="p-2 my-1  text-slate-300  outline-none bg-transparent border-b"
               type="email"
               placeholder="Enter your email"
+              name="user_email"
             />
-            <label className=" sm:text-xl text-white py-1" htmlFor="message">
-              Message
-            </label>
+            <label className=" sm:text-xl text-gray-300 p-2">Message</label>
             <textarea
-              className="text-slate-600  outline-none p-2 bg-transparent"
+              className="text-slate-300  outline-none p-2 my-1 bg-transparent"
               name="message"
               rows="4"
               cols="50"
               placeholder="Contact me!"
             ></textarea>
-            <button className="mt-4 p-3 rounded bg-orange-400 text-white text-xl">
+            <button
+              type="submit"
+              value="Send"
+              className="p-3 rounded bg-white/90 text-cyan-900 ext-xl hover:bg-cyan-900 hover:text-white"
+            >
               Send Email
             </button>
           </form>

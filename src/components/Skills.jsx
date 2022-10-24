@@ -12,7 +12,7 @@ import { Pagination } from "swiper";
 
 const Skills = () => {
   return (
-    <div className="w-full h-screen bg-[#1f2020]">
+    <div className="w-full h-screen">
       <div className="max-w-[1000px] mx-auto h-full ">
         <h1 className="text-red-300 text-3xl md:text-4xl flex justify-center mb-20">
           Skills

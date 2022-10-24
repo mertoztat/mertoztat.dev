@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Personal = () => {
   return (
-    <div className="w-full h-screen bg-[#1f2020]">
+    <div className="w-full h-screen">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-screen">
         <div className="grid sm:grid-cols-2 gap-4">
