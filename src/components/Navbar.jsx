@@ -1,30 +1,35 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
-import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => setClicked(!clicked);
-  // bg-[#1f2020]
   return (
     <div className="fixed w-full h-[80px] text-gray-300 flex items-center justify-around px-5 z-20 shadow-xl bg-zinc-800/95">
       <div className="w-20 pt-4">
         <Link to="/">
-          <img
-            className="w-20 flex items-center justify-center cursor-pointer"
-            src={logo}
-            alt="mertöztat"
-          />
+          <motion.div
+            initial={{ y: "-10%", scale: 0.5, opacity: 0 }}
+            animate={{ y: "0%", opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <img
+              className="w-20 flex items-center justify-center cursor-pointer"
+              src={logo}
+              alt="mertöztat"
+            />
+          </motion.div>
         </Link>
       </div>
       <ul className="hidden md:flex">
         <Link to="/">
           <li>Home</li>
         </Link>
-        <Link to="/about">
+        <Link to="/AboutPage">
           <li>About</li>
         </Link>
         <Link to="/skills">
@@ -65,7 +70,6 @@ const Navbar = () => {
           Contacts
         </li>
       </ul>
-      <Outlet />
     </div>
   );
 };

@@ -1,13 +1,22 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
-import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
+import Personal from "./components/Personal";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
+    <div className="bg-zinc-900">
+      <Navbar />
+      <Personal />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </div>
   );
 };
 

@@ -14,24 +14,13 @@
     @apply cursor-pointer;
   }
 }
-.phone::-webkit-scrollbar {
-  display: none;
-}
 
 .content-div {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 250px;
+  width: 400px;
   border: none;
   outline: none;
-}
-
-.content-div:hover {
-  background-image: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 0.6),
-    hsla(0, 0%, 37%, 0.2)
-  ) !important;
-  border: none;
-  outline: none;
+  border-radius: 10px;
 }
