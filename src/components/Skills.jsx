@@ -2,8 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { skillsImages } from "../data";
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -32,6 +32,7 @@ const Skills = () => {
           data-aos-duration="1000"
         >
           <Swiper
+            pagination={{ clickable: false }}
             slidesPerView={1}
             spaceBetween={10}
             breakpoints={{
@@ -48,7 +49,8 @@ const Skills = () => {
                 spaceBetween: 50,
               },
             }}
-            modules={[Pagination]}
+            navigation={true}
+            modules={[Navigation]}
             className="mySwiper"
           >
             {skillsImages.map((item, i) => (

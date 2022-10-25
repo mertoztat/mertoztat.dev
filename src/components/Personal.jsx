@@ -34,9 +34,9 @@ const Personal = () => {
                   sequence={[
                     "<Self Taught Frontend Developer/>",
                     1500, //
-                    "My goal is a Fullstack Developer",
+                    "My goal is to be a Fullstack Developer",
                     750,
-                    "I like to try new stuffs & learn new technologies..",
+                    "I like to learn new technologies..",
                     1200,
                   ]}
                   wrapper="div"

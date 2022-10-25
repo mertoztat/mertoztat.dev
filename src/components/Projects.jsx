@@ -1,6 +1,7 @@
+import { projects } from "../data";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { projects } from "../data";
 AOS.init();
 
 const Projects = () => {
@@ -57,7 +58,7 @@ const Projects = () => {
               >
                 <span className="text-2xl font bold text-white tracking-wider "></span>
                 <div className="pt-8 text-center ">
-                  <a href={item.github} target="_blank">
+                  <a href={item.github} target="_blank" rel="noreferrer">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
                        bg-white text-gray-700 font-bold text-lg"
@@ -65,7 +66,7 @@ const Projects = () => {
                       Code
                     </button>
                   </a>
-                  <a href={item.demo} target="_blank">
+                  <a href={item.demo} target="_blank" rel="noreferrer">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
                        bg-white text-gray-700 font-bold text-lg"
@@ -77,6 +78,17 @@ const Projects = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="w-full flex items-center justify-center mt-10">
+          <button className="px-3 py-4 bg-purple-700 rounded shadow-lg shadow-purple-700 hover:bg-purple-200 hover:text-purple-700">
+            <a
+              href="http://www.github.com/mertoztat"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Load More..
+            </a>
+          </button>
         </div>
       </div>
     </div>
