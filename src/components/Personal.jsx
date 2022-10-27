@@ -23,7 +23,7 @@ const Personal = () => {
             data-aos-duration="1000"
           >
             <div className="flex flex-col">
-              <h1 className="text-2xl sm:text-6xl font-medium  py-4 text-purple-200 text-center sm:text-left sm:pt-28 ">
+              <h1 className="text-2xl sm:text-6xl font-medium select-none  py-4 text-purple-200 text-center sm:text-left sm:pt-28 ">
                 Hi, I'm Mert.
               </h1>
               <div

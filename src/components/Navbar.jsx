@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleClick = () => setClicked(!clicked);
   return (
     <>
-      <div className="fixed w-full h-[80px] text-gray-300 flex items-center justify-around px-5 z-20 shadow-xl bg-zinc-800/95">
+      <div className="fixed w-full h-[70px] text-gray-300 flex items-center justify-around px-5 z-20 shadow-lg bg-zinc-800/95">
         <div className="w-20 pt-4">
           <Link to="/">
             <motion.div
@@ -19,7 +19,7 @@ const Navbar = () => {
               transition={{ duration: 1 }}
             >
               <img
-                className="w-20 flex items-center justify-center cursor-pointer"
+                className=" w-20 cursor-pointer"
                 src={logo}
                 alt="mertöztat"
               />
@@ -38,9 +38,9 @@ const Navbar = () => {
           <li className="hover:text-purple-200">
             <Link to="/skills">Skills</Link>
           </li>
-          <Link to="projects">
-            <li className="hover:text-purple-200">Projects</li>
-          </Link>
+          <li className="hover:text-purple-200">
+            <Link to="projects">Projects</Link>
+          </li>
 
           <li className="hover:text-purple-200">
             <Link to="/contact">Contact</Link>
@@ -62,20 +62,26 @@ const Navbar = () => {
               : "hidden"
           }
         >
-          <li className="py-4 text-2xl items-center justify-center hover:scale-125 transition duration-300 ease-in-out  hover:text-purple-200">
+          <li
+            className={
+              "py-4 text-2xl items-center justify-center hover:scale-125 transition duration-300 ease-in-out  hover:text-purple-200"
+            }
+          >
             Home
+            <Link to="/">Home </Link>
           </li>
           <li className="py-4 text-2xl items-center justify-center hover:scale-125  transition duration-300 ease-in-out  hover:text-purple-200">
+            <Link to="/about">About</Link>
             About
           </li>
           <li className="py-4 text-2xl items-center justify-center hover:scale-125  transition duration-300 ease-in-out hover:text-purple-200">
-            Skills
+            <Link to="/skills">Skills</Link>
           </li>
           <li className="py-4 text-2xl items-center justify-center hover:scale-125 transition duration-300 ease-in-out hover:text-purple-200">
-            Projects
+            <Link to="projects">Projects</Link>
           </li>
           <li className="py-4 text-2xl items-center justify-center hover:scale-125  transition duration-300 ease-in-out hover:text-purple-200">
-            Contact
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>

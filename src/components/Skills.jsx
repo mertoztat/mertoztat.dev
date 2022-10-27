@@ -11,7 +11,7 @@ AOS.init();
 const Skills = () => {
   return (
     <div className="w-full h-screen">
-      <div className="max-w-[1000px] mx-auto h-full ">
+      <div className="max-w-[1000px] mx-auto h-3/4 flex flex-col justify-center">
         <div className="text-center mb-10">
           <div
             data-aos="fade-down"
@@ -19,7 +19,7 @@ const Skills = () => {
             data-aos-duration="1000"
             className="text-center  tracking-wider"
           >
-            <p className="inline text-purple-200 font-bold text-center  border-b-4 border-l-4 pl-2 border-purple-700 text-4xl md:text-5xl  tracking-wide">
+            <p className="inline text-purple-200 font-bold select-none text-center  border-b-4 border-l-4 pl-2 border-purple-700 text-4xl md:text-5xl  tracking-wide">
               Skills
             </p>
           </div>

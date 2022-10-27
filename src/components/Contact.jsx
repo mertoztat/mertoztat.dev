@@ -95,7 +95,7 @@ const Contact = () => {
         >
           <form ref={form} onSubmit={sendEmail} className="flex flex-col">
             <div className="text-xl m-4 sm:text-3xl  text-center text-purple-100">
-              <span className="pl-2 border-l-4 border-b-4 border-purple-500">
+              <span className="pl-2 select-none border-l-4 border-b-4 border-purple-500">
                 Contact me!
               </span>
             </div>

@@ -27,10 +27,10 @@ export const projects = [
   {
     id: 1,
     img: "./images/projects/sneakers2.png",
-    description: "This project created by html, css & javascript",
-    tech: "Html, Css, Javascript",
-    demo: "https://marsburger.netlify.app/",
-    github: "https://github.com/mertoztat/Mars-Burger-Shop",
+    description: "This project created by react js, context api",
+    tech: "React Js, Context Api, React Hooks",
+    demo: "https://fementor-sneakers.netlify.app/",
+    github: "https://github.com/mertoztat/Ecommerce_sneakers",
   },
   {
     id: 2,

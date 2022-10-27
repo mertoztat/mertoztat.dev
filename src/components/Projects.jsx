@@ -1,37 +1,33 @@
 import { projects } from "../data";
-import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
 const Projects = () => {
   return (
-    <div name="work" className="w-full min-h-screen text-gray-300">
-      <div className="max-w-[1200px] mx-auto p-4 flex flex-col justify-center w-full h-full ">
+    <div className="w-full min-h-screen text-gray-300">
+      <div className="max-w-[1200px] mx-auto min-h-screen p-4 ">
+        {/* container  */}
         <div
-          className="pb-8"
-          data-aos="fade-right"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-        >
-          <p className="sm:text-center text-4xl sm:text-5xl  font-bold tracking-wide  inline border-b-4 border-r-4 pr-2 text-purple-100 border-purple-600">
-            Projects
-          </p>
-          <p className="py-6 text-md leading-7 ">
-            Thats projects are created by frontend technologies like html, css,
-            sass, tailwind, javascript, react js, next js <br /> and others
-            technologies..
-          </p>
-        </div>
-
-        {/* container for projects */}
-        <div
-          className="flex flex-wrap w-full h-full gap-8"
+          className="flex flex-wrap justify-center items-center w-full h-screen gap-6 mt-20"
           data-aos="fade-up"
           data-aos-delay="100"
           data-aos-duration="1000"
         >
-          {/* Gird Item */}
+          <div
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <p className="sm:text-center text-4xl sm:text-5xlselect-none  font-bold tracking-wide  inline border-b-4 border-r-4 pr-2 text-purple-100 border-purple-600">
+              Projects
+            </p>
+            <p className="py-6   text-md leading-7 select-none ">
+              Thats projects are created by frontend technologies like html,
+              css, sass, tailwind, javascript, react js, next js <br /> and
+              others technologies..
+            </p>
+          </div>
           {projects.map((item, index) => (
             <div
               key={index}
@@ -46,7 +42,7 @@ const Projects = () => {
               {/* Hover effect for images */}
               <div
                 style={{
-                  backgroundColor: "#383838",
+                  backgroundColor: "#040c16",
                   height: "100%",
                   width: "100%",
                   display: "flex",
@@ -54,14 +50,14 @@ const Projects = () => {
                   alignItems: "center",
                   borderRadius: "10px",
                 }}
-                className="opacity-0 group-hover:opacity-100"
+                className="opacity-0 group-hover:opacity-80"
               >
                 <span className="text-2xl font bold text-white tracking-wider "></span>
                 <div className="pt-8 text-center ">
                   <a href={item.github} target="_blank" rel="noreferrer">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
+                       bg-purple-600 text-purple-100 font-bold text-lg"
                     >
                       Code
                     </button>
@@ -69,7 +65,7 @@ const Projects = () => {
                   <a href={item.demo} target="_blank" rel="noreferrer">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
+                      bg-purple-600 text-purple-100 font-bold text-lg"
                     >
                       Live
                     </button>
@@ -78,17 +74,17 @@ const Projects = () => {
               </div>
             </div>
           ))}
-        </div>
-        <div className="w-full flex items-center justify-center mt-10">
-          <button className="px-3 py-4 bg-purple-700 rounded shadow-lg shadow-purple-700 hover:bg-purple-200 hover:text-purple-700">
-            <a
-              href="http://www.github.com/mertoztat"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Load More..
-            </a>
-          </button>
+          <div className="w-full flex items-center justify-center mb-4">
+            <button className="px-3 py-4 bg-purple-700 rounded shadow-lg shadow-purple-700 hover:bg-purple-200 hover:text-purple-700">
+              <a
+                href="http://www.github.com/mertoztat"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Load More..
+              </a>
+            </button>
+          </div>
         </div>
       </div>
     </div>
