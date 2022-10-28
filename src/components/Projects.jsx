@@ -6,10 +6,10 @@ AOS.init();
 const Projects = () => {
   return (
     <div className="w-full min-h-screen text-gray-300">
-      <div className="max-w-[1200px] mx-auto min-h-screen p-4 ">
+      <div className="max-w-[1000px] mx-auto min-h-screen p-4 ">
         {/* container  */}
         <div
-          className="flex flex-wrap justify-center items-center w-full h-screen gap-6 mt-20"
+          className="flex flex-wrap justify-center items-center w-full min-h-screen gap-6 mt-20"
           data-aos="fade-up"
           data-aos-delay="100"
           data-aos-duration="1000"

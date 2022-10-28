@@ -67,12 +67,10 @@ const Navbar = () => {
               "py-4 text-2xl items-center justify-center hover:scale-125 transition duration-300 ease-in-out  hover:text-purple-200"
             }
           >
-            Home
             <Link to="/">Home </Link>
           </li>
           <li className="py-4 text-2xl items-center justify-center hover:scale-125  transition duration-300 ease-in-out  hover:text-purple-200">
             <Link to="/about">About</Link>
-            About
           </li>
           <li className="py-4 text-2xl items-center justify-center hover:scale-125  transition duration-300 ease-in-out hover:text-purple-200">
             <Link to="/skills">Skills</Link>
