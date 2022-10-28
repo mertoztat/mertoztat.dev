@@ -132,9 +132,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <div className="">
-            <Footer />
-          </div>
+          <Footer />
         </div>
       </div>
     </>
