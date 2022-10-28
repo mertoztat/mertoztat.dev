@@ -67,19 +67,32 @@ const Navbar = () => {
               "py-4 text-2xl items-center justify-center hover:scale-125 transition duration-300 ease-in-out  hover:text-purple-200"
             }
           >
-            <Link to="/">Home </Link>
+            <Link onClick={handleClick} to="/">
+              Home{" "}
+            </Link>
           </li>
           <li className="py-4 text-2xl items-center justify-center hover:scale-125  transition duration-300 ease-in-out  hover:text-purple-200">
-            <Link to="/about">About</Link>
+            <Link onClick={handleClick} to="about">
+              About
+            </Link>
           </li>
-          <li className="py-4 text-2xl items-center justify-center hover:scale-125  transition duration-300 ease-in-out hover:text-purple-200">
-            <Link to="/skills">Skills</Link>
+          <li
+            onClick={handleClick}
+            className="py-4 text-2xl items-center justify-center hover:scale-125  transition duration-300 ease-in-out hover:text-purple-200"
+          >
+            <Link to="skills">Skills</Link>
           </li>
-          <li className="py-4 text-2xl items-center justify-center hover:scale-125 transition duration-300 ease-in-out hover:text-purple-200">
+          <li
+            onClick={handleClick}
+            className="py-4 text-2xl items-center justify-center hover:scale-125 transition duration-300 ease-in-out hover:text-purple-200"
+          >
             <Link to="projects">Projects</Link>
           </li>
-          <li className="py-4 text-2xl items-center justify-center hover:scale-125  transition duration-300 ease-in-out hover:text-purple-200">
-            <Link to="/contact">Contact</Link>
+          <li
+            onClick={handleClick}
+            className="py-4 text-2xl items-center justify-center hover:scale-125  transition duration-300 ease-in-out hover:text-purple-200"
+          >
+            <Link to="contact">Contact</Link>
           </li>
         </ul>
       </div>

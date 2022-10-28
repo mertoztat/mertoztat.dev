@@ -32,7 +32,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="w-full min-h-[90vh]  flex justify-center items-center p-4">
+      <div className="w-full h-screen  flex justify-center items-center p-4">
         {/* contact container */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2  shadow-2xl rounded-xl bg-gradient-to-t from-purple-900/40  to-slate-900  ">
           <div
@@ -132,9 +132,11 @@ const Contact = () => {
               </button>
             </form>
           </div>
+          <div className="">
+            <Footer />
+          </div>
         </div>
       </div>
-      {/* <Footer /> */}
     </>
   );
 };
