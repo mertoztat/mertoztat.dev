@@ -12,12 +12,12 @@ const Projects = () => {
           className="flex flex-wrap justify-center items-center w-full min-h-screen gap-6 mt-20"
           data-aos="fade-up"
           data-aos-delay="100"
-          data-aos-duration="1000"
+          data-aos-duration="700"
         >
           <div
             data-aos="fade-right"
             data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-duration="700"
           >
             <p className="sm:text-center text-4xl sm:text-5xlselect-none  font-bold tracking-wide  inline border-b-4 border-r-4 pr-2 text-purple-100 border-purple-600">
               Projects

@@ -11,7 +11,10 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaGithub className="text-white cursor-pointer " size={30} />
+              <FaGithub
+                className="text-white cursor-pointer hover:scale-95 duration-100 "
+                size={30}
+              />
             </a>
           </li>
           <li>
@@ -20,7 +23,10 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaTwitter className="text-white cursor-pointer" size={30} />
+              <FaTwitter
+                className="text-white cursor-pointer hover:scale-95 duration-100"
+                size={30}
+              />
             </a>
           </li>
           <li>
@@ -29,7 +35,10 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaLinkedin className="text-white cursor-pointer " size={30} />
+              <FaLinkedin
+                className="text-white cursor-pointer hover:scale-95 duration-100 "
+                size={30}
+              />
             </a>
           </li>
         </ul>

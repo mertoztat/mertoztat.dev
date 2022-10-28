@@ -14,9 +14,9 @@ const Navbar = () => {
         <div className="w-20 pt-4">
           <Link to="/">
             <motion.div
-              initial={{ x: "1000%", scale: 0.5, opacity: 0 }}
+              initial={{ x: "500%", scale: 0.5, opacity: 0 }}
               animate={{ x: "0%", opacity: 1, scale: 1 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.5 }}
             >
               <img
                 className=" w-20 cursor-pointer"

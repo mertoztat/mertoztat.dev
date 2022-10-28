@@ -39,7 +39,7 @@ const Contact = () => {
             className="hidden relative sm:block"
             data-aos="zoom-in"
             data-aos-delay="100"
-            data-aos-duration="1000"
+            data-aos-duration="700"
           >
             <img
               className="hidden sm:rounded-l-xl w-full h-full sm:block object-cover"
@@ -57,7 +57,7 @@ const Contact = () => {
                   size={30}
                   data-aos="fade-up"
                   data-aos-delay="100"
-                  data-aos-duration="1000"
+                  data-aos-duration="700"
                 />
               </a>
               <a
@@ -68,7 +68,7 @@ const Contact = () => {
                 <FaLinkedin
                   data-aos="fade-up"
                   data-aos-delay="100"
-                  data-aos-duration="1000"
+                  data-aos-duration="700"
                   className="text-white cursor-pointer hover:text-[#0072b1] duration-200 hover:scale-125"
                   size={30}
                 />
@@ -81,7 +81,7 @@ const Contact = () => {
                 <FaGithub
                   data-aos="fade-up"
                   data-aos-delay="100"
-                  data-aos-duration="1000"
+                  data-aos-duration="700"
                   className="text-white cursor-pointer hover:text-[#9305be] duration-200 hover:scale-125  "
                   size={30}
                 />
@@ -93,7 +93,7 @@ const Contact = () => {
             className="flex flex-col sm:max-w-full"
             data-aos="fade-down"
             data-aos-delay="100"
-            data-aos-duration="1000"
+            data-aos-duration="700"
           >
             <form ref={form} onSubmit={sendEmail} className="flex flex-col">
               <div className="text-xl m-4 sm:text-3xl  text-center text-purple-100">

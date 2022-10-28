@@ -16,7 +16,7 @@ const Skills = () => {
           <div
             data-aos="fade-down"
             data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-duration="700"
             className="text-center  tracking-wider"
           >
             <p className="inline text-purple-200 font-bold select-none text-center  border-b-4 border-l-4 pl-2 border-purple-700 text-4xl md:text-5xl  tracking-wide">
@@ -29,7 +29,7 @@ const Skills = () => {
           className="my-20"
           data-aos="fade-up"
           data-aos-delay="50"
-          data-aos-duration="1000"
+          data-aos-duration="700"
         >
           <Swiper
             pagination={{ clickable: false }}

@@ -8,11 +8,11 @@ const About = () => {
     <div className="w-full h-screen">
       {/* container */}
       <div className="max-w-[1000px] mx-auto h-3/4 flex justify-center items-center ">
-        <div className="flex  align-center justify-center cursor-pointer ">
+        <div className="flex  align-center justify-center">
           <div
             data-aos="fade-right"
             data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-duration="700"
             className="text-center  tracking-wider"
           >
             <p className="text-4xl sm:text-5xl select-none  inline font-bold text-purple-200 border-b-4 border-r-4 pr-2 border-purple-500 tracking-wide  text-center md:text-center">

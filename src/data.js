@@ -8,7 +8,6 @@ import react from "../src/assets/skills/react.png";
 import sass from "../src/assets/skills/sass2.png";
 import tailwind from "../src/assets/skills/tailwind.png";
 import next from "../src/assets/skills/next.png";
-import gif from "./assets/sneakers.gif";
 
 export const skillsImages = [
   html,

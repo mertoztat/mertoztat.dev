@@ -13,15 +13,11 @@ const Personal = () => {
           <div
             data-aos="fade-right"
             data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-duration="700"
           >
             <img src={Mert} alt="mertöztat" />
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-          >
+          <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="700">
             <div className="flex flex-col">
               <h1 className="text-2xl sm:text-6xl font-medium select-none  py-4 text-purple-200 text-center sm:text-left sm:pt-28 ">
                 Hi, I'm Mert.
