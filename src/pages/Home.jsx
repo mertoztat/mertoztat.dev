@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Personal from "../components/Personal";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 };
