@@ -1,4 +1,4 @@
-import React from "react";
+import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -24,6 +24,47 @@ const About = () => {
               passion, I changed my career as a frontend developer. I usually
               develop projects using react and next js.
             </p>
+            <div className="flex justify-center items-center mt-5 gap-10">
+              <a
+                href="https://twitter.com/mertoztat"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaTwitter
+                  className="text-white cursor-pointer hover:text-[#00acee] duration-200 hover:scale-125"
+                  size={30}
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="700"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mertoztat/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="700"
+                  className="text-white cursor-pointer hover:text-[#0072b1] duration-200 hover:scale-125"
+                  size={30}
+                />
+              </a>
+              <a
+                href="http://www.github.com/mertoztat"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="700"
+                  className="text-white cursor-pointer hover:text-[#9305be] duration-200 hover:scale-125  "
+                  size={30}
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>

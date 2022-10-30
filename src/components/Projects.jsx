@@ -36,7 +36,7 @@ const Projects = () => {
                 `,
                 backgroundSize: "cover",
               }}
-              className="cursor-pointer shadow-md shadow-[#040c16] group container rounded-md 
+              className=" shadow-md shadow-[#040c16] group container rounded-md 
               flex mx-auto content-div border-none outline-none"
             >
               {/* Hover effect for images */}

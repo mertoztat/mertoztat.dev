@@ -117,7 +117,7 @@ const Contact = () => {
               />
               <label className=" sm:text-xl text-purple-100 p-2">Message</label>
               <textarea
-                className="text-purple-100  outline-none p-2 my-1 bg-transparent"
+                className="text-purple-100  outline-none p-2 my-1 bg-transparent resize-none"
                 name="message"
                 rows="4"
                 cols="50"
