@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Footer from "./Footer";
 import emailjs from "@emailjs/browser";
 import contact from "../assets/contact.png";
@@ -9,9 +9,13 @@ AOS.init();
 
 const Contact = () => {
   const form = useRef();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
+
     emailjs
       .sendForm(
         "service_xmz6w7b",
@@ -27,7 +31,9 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    window.location.reload();
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -95,33 +101,58 @@ const Contact = () => {
             data-aos-delay="100"
             data-aos-duration="700"
           >
-            <form ref={form} onSubmit={sendEmail} className="flex flex-col">
+            {/* Form */}
+
+            <form ref={form} onSubmit={handleSubmit} className="flex flex-col">
               <div className="text-xl m-4 sm:text-3xl  text-center text-purple-100">
                 <span className="pl-2 select-none border-l-4 border-b-4 border-purple-500">
                   Contact me!
                 </span>
               </div>
-              <label className="sm:text-xl text-purple-100 p-2">Name</label>
+              <label
+                htmlFor="input_name"
+                className="sm:text-xl text-purple-100 p-2 "
+              >
+                Name
+              </label>
               <input
                 className="p-2 my-1 text-purple-100   outline-none bg-transparent border-b"
                 type="text"
                 placeholder="Enter your name"
                 name="user_name"
+                id="input_name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
               />
-              <label className=" sm:text-xl text-purple-100 p-2">E-mail</label>
+
+              <label
+                htmlFor="input_email"
+                className=" sm:text-xl text-purple-100 p-2"
+              >
+                E-mail
+              </label>
               <input
                 className="p-2 my-1  text-purple-100  outline-none bg-transparent border-b"
                 type="email"
                 placeholder="Enter your email"
                 name="user_email"
+                id="input_email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
               />
+
               <label className=" sm:text-xl text-purple-100 p-2">Message</label>
               <textarea
                 className="text-purple-100  outline-none p-2 my-1 bg-transparent resize-none"
                 name="message"
+                value={message}
                 rows="4"
                 cols="50"
                 placeholder="Contact me!"
+                onChange={(e) => setMessage(e.target.value)}
+                required
               ></textarea>
               <button
                 type="submit"

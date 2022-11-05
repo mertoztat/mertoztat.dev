@@ -8,14 +8,14 @@ import Skills from "../components/Skills";
 
 const Home = () => {
   return (
-    <div className="bg-zinc-900">
+    <>
       <Navbar />
       <Personal />
       <About />
       <Skills />
       <Projects />
       <Contact />
-    </div>
+    </>
   );
 };
 

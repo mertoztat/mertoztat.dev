@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { skillsImages } from "../data";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
@@ -12,14 +11,14 @@ const Skills = () => {
   return (
     <div className="w-full h-screen">
       <div className="max-w-[1000px] mx-auto h-3/4 flex flex-col justify-center">
-        <div className="text-center mb-10">
+        <div className="text-center mt-20 ">
           <div
             data-aos="fade-down"
             data-aos-delay="50"
             data-aos-duration="700"
             className="text-center  tracking-wider"
           >
-            <p className="inline text-purple-200 font-bold select-none text-center  border-b-4 border-l-4 pl-2 border-purple-700 text-4xl md:text-5xl  tracking-wide">
+            <p className="inline text-purple-200 font-bold select-none text-center   border-b-4 border-l-4 pl-2 border-purple-700 text-4xl md:text-5xl  tracking-wide">
               Skills
             </p>
           </div>
