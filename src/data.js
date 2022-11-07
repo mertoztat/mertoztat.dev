@@ -5,7 +5,7 @@ import bootstrap from "../src/assets/skills/bootstrap.png";
 import firebase from "../src/assets/skills/firebase.png";
 import git from "../src/assets/skills/git-logo.png";
 import react from "../src/assets/skills/react.png";
-import sass from "../src/assets/skills/sass2.png";
+import sass from "../src/assets/skills/sass.png";
 import tailwind from "../src/assets/skills/tailwind.png";
 import next from "../src/assets/skills/next.png";
 
