@@ -40,7 +40,7 @@ const Contact = () => {
     <>
       <div className="w-full h-screen  flex justify-center items-center p-4">
         {/* contact container */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2  shadow-2xl rounded-xl bg-gradient-to-t from-purple-900/40  to-slate-900  ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 shadow-2xl rounded-xl bg-gradient-to-t from-purple-900/40  to-slate-900  ">
           <div
             className="hidden relative sm:block"
             data-aos="zoom-in"
@@ -103,7 +103,11 @@ const Contact = () => {
           >
             {/* Form */}
 
-            <form ref={form} onSubmit={handleSubmit} className="flex flex-col">
+            <form
+              ref={form}
+              onSubmit={handleSubmit}
+              className="flex flex-col p-4"
+            >
               <div className="text-xl m-4 sm:text-3xl  text-center text-purple-100">
                 <span className="pl-2 select-none border-l-4 border-b-4 border-purple-500">
                   Contact me!
