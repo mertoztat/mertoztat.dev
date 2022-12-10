@@ -1,4 +1,5 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useContext, useEffect } from "react";
+import PortfolioContext from "../context/PortfolioContext";
 import Footer from "./Footer";
 import emailjs from "@emailjs/browser";
 import contact from "../assets/contact.png";
@@ -12,6 +13,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const { bottomToTop, setScrollTop, scrollTop } = useContext(PortfolioContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -35,6 +37,16 @@ const Contact = () => {
     setEmail("");
     setMessage("");
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 340) {
+        setScrollTop(true);
+      } else {
+        setScrollTop(false);
+      }
+    });
+  }, []);
 
   return (
     <>
@@ -167,9 +179,20 @@ const Contact = () => {
               </button>
             </form>
           </div>
+
           <Footer />
         </div>
       </div>
+      {scrollTop && (
+        <div className="w-full flex justify-end items-center">
+          <button
+            onClick={bottomToTop}
+            className="m-2 rounded-md p-4 bg-indigo-600 text-white hover:bg-indigo-700"
+          >
+            Go Up!
+          </button>
+        </div>
+      )}
     </>
   );
 };
