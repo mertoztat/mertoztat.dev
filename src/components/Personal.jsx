@@ -10,11 +10,7 @@ const Personal = () => {
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-screen">
         <div className="grid sm:grid-cols-2 gap-4">
-          <div
-            data-aos="fade-right"
-            data-aos-delay="50"
-            data-aos-duration="700"
-          >
+          <div>
             <img src={Mert} alt="mertöztat" />
           </div>
           <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="700">

@@ -22,7 +22,8 @@ const About = () => {
             <p className="py-10 px-10 select-none text-center max-w-[500px] text-purple-100">
               I really love learning new technologies and coding. Following this
               passion, I changed my career as a frontend developer. I usually
-              develop projects using react and next js.
+              develop projects using javascript, typescript, reactjs, nextjs &
+              react native.
             </p>
             <div className="flex justify-center items-center mt-5 gap-10">
               <a

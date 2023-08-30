@@ -1,9 +1,19 @@
 import { projects } from "../data";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useState } from "react";
 AOS.init();
 
 const Projects = () => {
+  const [increase, setIncrease] = useState(4);
+  const myGithub = "https://github.com/mertoztat";
+
+  const loadMore = () => {
+    if (projects.length === increase) {
+      window.location.assign(myGithub, "_blank");
+    }
+    setIncrease((increase) => increase + 2);
+  };
   return (
     <div className="w-full min-h-screen text-gray-300">
       <div className="max-w-[1000px] mx-auto min-h-screen p-4 ">
@@ -24,11 +34,11 @@ const Projects = () => {
             </p>
             <p className="py-6   text-md leading-7 select-none ">
               Thats projects are created by frontend technologies like html,
-              css, sass, tailwind, javascript, react js, next js <br /> and
-              others technologies..
+              css, sass, tailwindcss, javascript, typescript, reactjs, nextjs{" "}
+              <br /> and others technologies..
             </p>
           </div>
-          {projects.map((item, index) => (
+          {projects.slice(0, increase).map((item, index) => (
             <div
               key={index}
               style={{
@@ -75,14 +85,11 @@ const Projects = () => {
             </div>
           ))}
           <div className="w-full flex items-center justify-center mb-4">
-            <button className="px-3 py-4 bg-purple-700 rounded shadow-lg shadow-purple-700 hover:bg-purple-200 hover:text-purple-700">
-              <a
-                href="http://www.github.com/mertoztat"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Load More..
-              </a>
+            <button
+              onClick={loadMore}
+              className="px-3 py-4 outline-none bg-purple-700 rounded shadow-lg shadow-purple-700 hover:bg-purple-200 hover:text-purple-700"
+            >
+              Load More..
             </button>
           </div>
         </div>
